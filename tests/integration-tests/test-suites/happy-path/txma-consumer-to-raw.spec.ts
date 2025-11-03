@@ -1,6 +1,6 @@
-import { getIntegrationTestEnv } from '../helpers/utils/utils';
-import { executeAthenaQuery } from '../helpers/aws/athena/execute-athena-query';
-import { happyPathEventList } from '../test-events/happy-path-event-list';
+import { getIntegrationTestEnv } from '../../helpers/utils/utils';
+import { executeAthenaQuery } from '../../helpers/aws/athena/execute-athena-query';
+import { happyPathEventList } from '../../test-events/happy-path-events/happy-path-event-list';
 
 // Get events that were processed during setup
 const getTestEventPairs = () => (global as { testEventPairs?: typeof happyPathEventList }).testEventPairs || [];
